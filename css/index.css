@@ -1,0 +1,87 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cards {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 50px;
+    overflow: auto;
+}
+
+.cards .card {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+.card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.card-icon {
+    position: relative;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.card-icon span{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.card-info {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.card-info span {
+    padding: 5px 10px;
+    margin: 0 5px; 
+    border-radius: 3px;
+    background-color: #f0f0f0;
+}
+
+/* tablet */
+@media (max-width: 940px) {
+    .card-info span {
+        width: 50%;
+    }
+
+    .cards .card {
+        width: 100%;
+    }
+}
+
+/* mobile */
+@media (max-width: 515px) {
+    .card-info { 
+        height: 100px;
+        line-height: 24px;
+    }
+
+    .card-info span {
+        width: 50%;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .cards .card {
+        width: 100%;
+    }
+}
