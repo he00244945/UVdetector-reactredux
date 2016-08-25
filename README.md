@@ -5,3 +5,4 @@
 ### 1. git clone https://github.com/he00244945/UVdetector-reactredux.git
 ### 2. npm install
 ### 3. npm start
+### 4. localhost:3000
